@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Home section -->
+    <div class="container-fluid background-banner">
+        <div class="d-flex justify-content-between sticky-top">
+            <div class="ms-5 mt-3 "><img class="logo" src="./Images/logo.png" width="132" height="39" alt="Images"></div>
+            <div class="me-4 mt-3">
+                <button type="button" class="btn btn-danger ps-4 pe-4">Sign In</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center home-content">
+            <div class="home text-white">
+                <h1 >Nontonnnn Bang Sini, <br>&nbsp;&nbsp;&nbsp; banyak filmnyaa.</h1>
+                <h4 class="text-center mt-3">Nonton dimane aja. Bebas Kensel.</h4>
+                <p class="fw-bold">Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="input-group mb-3">
+                    <input id="channel" type="text" class="form-control p-3" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span onclick="welcomeChannel()" class="button input-group-text bg-danger text-white fw-bold ps-2 pe-2" id="basic-addon2">Get started ></span>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second section -->
+   <div class="container-fluid bg-black text-white">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-5 p-5">
+           <h2 class="fs-1 fw-bold">Selamat Nonton.</h2>
+           <p style="font-size: 25px;">Bisa nonton di smart TV, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players dan <br> banyak lagi.</p>
+        </div>
+        <div class="col-md-6 mt-5">
+          <img class="netflix-content" src= "Images/_hero.a806bc95.jpg" width="450" height="280" alt="">
+        </div>
+    </div>
+   </div>
+   </div>
+   
+   <!-- Third section -->
+
+ <div class="container-fluid bg-black text-white">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-5">
+           <img class="ms-5 netflix-content" src="Images/photo_2021-09-26_05-28-42.jpg" width="300" height="350" alt="banner">
+        </div>
+        <div class="col-md-6" style="margin-top: 130px;">
+             <h1>Download film anda <br> untuk tonton secara offline.</h1>
+             <p class="fs-4">Unlimited Streaming film dan acara tv lewat <br> handphone anda, tablet, laptop, and TV.</p>   
+        </div>
+    </div>
+    </div>
+ </div>
+ <!-- fourth section -->
+ <div class="container-fluid bg-black text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="margin-top: 130px;">
+                <h1 class="ms-5">Bikin akun untuk  <br> anak-anak.</h1>
+                <p class="fs-4 ms-5">Biarkan mereka bermain dan berimajinasi dengan <br> karakter favorit di lingkungan hanya untuk  <br> mereka—dengan cara berlangganan. </p>
+            </div>
+            <div class="col-md-6 mt-5">
+                <img class="netflix-content" src="./Images/fourth-section-banner.png" alt="image" >
+            </div>
+        </div>
+    </div>
+ </div>
+  <!-- footer starts here -->
+  <footer class="bg-dark text-white pt-5 pb-5 footer-custom" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <img src="images/logo.png" alt="Logo" width="120" height="40" class="d-inline-block netflix-content align-text-top">
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-section">
+                    <ul>
+                        <li> FAQ</li>
+                        <li>Investor Relations</li>
+                        <li>Privacy</li>
+                        <li>Blog</li>
+                        <li>Speed Test</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-section">
+                    <ul>
+                        <li> Help Center</li>
+                        <li>Cookie preference</li>
+                        <li>Jobs</li>
+                        <li>Legal Notices</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-section">
+                    <ul>
+                        <li> Account</li>
+                        <li>Ways To Watch</li>
+                        <li>Only on Netflix</li>
+                        <li>Contact Us  </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="developer-custom text-center fs-">Netflix Indonesia</div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+        <script>
+         
+            function welcomeChannel(){
+                let channel=document.getElementById("channel")
+                if(channel.value===""){
+                    alert("Enter Your Username or Email Address")
+                }else{
+                    alert("Welcome " +channel.value)
+                    channel.value=""
+                }
+            }
+        </script>
+        
+</body>
+
+</html>
